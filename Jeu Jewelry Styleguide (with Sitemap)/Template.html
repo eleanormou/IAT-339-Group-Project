@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Style Guide Template</title>
+
+    <link href="css/main.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <h1>Jeu Jewelry Style Guide</h1>
+
+    <p>Modern, luxury and fine jewelry for the everyday woman.</p>
+
+
+    <nav>
+      
+      <p>
+        Go to:
+        <a href="https://7agpa4.axshare.com/#id=jkcm2e&p=joining_newsletter&sc=1">Wireframes</a>, <a href="https://github.com/eleanormou/IAT-339-Group-Project">Github Repository</a>, <a href="citation.html">Citation</a>
+      </p>
+
+    </nav>
+
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+
+        <section>
+
+        <h2>Sitemap</h2>
+        <img src="img/sitemap.png" alt="Sitemap" style="width:100%">
+
+      </section>
+
+      <!-- Default Button styling section -->
+      <section>
+
+        <h2>Navigation Button</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.button-nav</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a href="button-nav" class="button-nav shopall"&gt;Shop All&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <!-- referred to https://www.w3schools.com/howto/howto_css_text_buttons.asp -->
+        <button-nav class="button-nav shopall">Shop All</button-nav>
+
+      </section>
+
+      <section>
+        <h2>In-text link</h2>        
+        <h3>CSS selector:</h3>
+        <p>a</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a href="www.mejuri.com" class="in-text-link"&gt;here&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>        
+        <p>Browse similar collections <a href="www.mejuri.com">here</a></p>
+      </section>
+
+      <section>
+        <h2>Submit/Reset Buttons</h2>
+        <h3>CSS selector:</h3>
+        <p>button[type=submit]</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a href="Submit" class="button-sub"&gt;Submit&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <!-- referred to https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_button_form -->
+        <button type="submit" value="Submit">Submit</button>
+      </section>
+
+      <section>
+        <h2>Text Input Field</h2>
+        <h3>CSS selector:</h3>
+        <p>input[type=text]</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a href="text" class="input"&gt;Email&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <!-- referred to https://www.w3schools.com/html/html_forms.asp -->
+        <form action="/action_page.php">
+          Email:
+          <input type="text" name="email" value="Email Address">
+        </form>
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+
+      <section>
+        <h1>Header 1</h1>
+        <h2>Header 2</h2>
+        <h3>Header 3</h3>
+        <h3>CSS selector:</h3>
+        <p>h1, h2, h3</p>
+
+      </section>
+
+      <section>
+        <h2>Paragraphs</h2>
+        <h3>CSS selector:</h3>
+        <p>section p</p>
+
+        <h3>Rendered element:</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et dui ligula. Praesent a erat nec eros posuere congue. Pellentesque pharetra, nisi vel molestie laoreet, elit diam interdum quam, et convallis neque purus sed eros. In aliquet elit lorem, a venenatis diam porta mattis. Suspendisse at urna sed metus accumsan pulvinar id id risus. Aenean cursus ac nisi sed bibendum. Ut lectus turpis, sodales sit amet scelerisque vel, egestas tempus eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus venenatis mi ac ligula pretium luctus. Vivamus eu venenatis urna. Mauris vulputate faucibus diam, eget convallis ante iaculis et. Praesent ultrices blandit nisi et sollicitudin. Proin eget ipsum erat. Integer malesuada at est nec mollis. Nullam quis est velit. Praesent quis finibus purus, vitae ullamcorper velit.</p>
+      </section>
+
+<!-- referred to https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_intro -->
+      <section>
+        <h2>Bulleted Lists</h2>
+      </section>
+        <h3>CSS selector:</h3>
+        <p>ul</p>
+
+        <h3>Rendered element:</h3>
+      <ul>
+        <li>Bracelets</li>
+        <li>Necklaces</li>
+        <li>Earrings</li>
+      </ul>
+
+      <section>
+        <h2>Numbered Lists</h2>
+      </section>
+        <h3>CSS selector:</h3>
+        <p>li</p>
+
+        <h3>Rendered element:</h3>
+      <ol>
+        <li>14k Solid Gold</li>
+        <li>Sterling Silver</li>
+        <li>Pearls</li>
+      </ol>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+
+      <!-- referred to https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_topnav_right -->
+      <section>
+        <h2>Main Navigation</h2>
+        <h3>CSS selector:</h3>
+        <p>.topnav, .topnav a, .topnav a:hover, .topnav a.active, .topnav-right, .topnav-mid</p>
+        <h3>Rendered element:</h3>
+        <div class="topnav">
+        <a href="#shopall">Shop All</a>
+        <div class="topnav-mid">
+        <a class="active" href="#home">Jeu Jewelry</a>
+      </div>
+        <div class="topnav-right">
+        <a href="#search">Search</a>
+        <a href="#cart">Cart</a>
+      </div>
+    </div>
+
+      </section>
+
+      <section>
+        <h2>Product Listing</h2>
+        <h3>CSS selector:</h3>
+        <p>.card, .price, .card button, .card button:hover</p>
+        <h3>Rendered element</h3>
+        <!-- referred to https://www.w3schools.com/howto/howto_css_product_card.asp -->
+        <div class="card">
+          <img src="img/ring.jpg" alt="Silver Ring" style="width:100%">
+          <h2>Sterling Silver Asymmetrical Ring</h2>
+          <p class="price">$120</p>
+          <p>Handmade in Vancouver, from the finest hypoallergenic metals in Italy.</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Grid Structure</h2>
+      </section>
+      <h3>CSS selector:</h3>
+      <p>.container, .block-1, .block-2, .block-3, @media (max-width: 35rem)</p>
+      <h3>Rendered element</h3>
+      <div class="container">
+        <div class="block-1">
+          <h3>Photo</h3>
+        </div>
+      <div class="block-2">
+          <h3>Product Description</h3>
+        </div>
+      <div class="block-3">
+          <h3>Photo</h3>
+        </div>
+      </div>
+
+      <section>
+        <h2>Colour Swatches</h2>
+      </section>
+      <h3>CSS selector:</h3>
+      <p>.container, .block-c1, .block-c2, .block-c3, .block-c4, @media (max-width: 35rem)</p>
+      <h3>Rendered element</h3>
+      <div class="container">
+        <div class="block-c1">
+          <h3>Body Text, Logo, Buttons</h3>
+        </div>
+      <div class="block-c2">
+          <h3>Hovered Links and Buttons</h3>
+        </div>
+      <div class="block-c3">
+          <h3>Borders and Lines</h3>
+        </div>
+      <div class="block-c4">
+          <h3>Headers</h3>
+        </div>
+      </div>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+
+  </body>
+</html>
