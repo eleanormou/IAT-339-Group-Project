@@ -19,78 +19,13 @@ font-family: "Belleza";
 src: url("css/font/Belleza.woff") format("woff"), url("css/font/Belleza.woff2") format("woff2")
 }
 
-/*------------------------------------------------------
-*/
-
-
-
-
-.Header-Logo{
-color: #545358;
-}
-
-
-.grid-col-1of3 {
-  font-family: "Belleza";
-  display: inline-block;
-  padding: 1em 5em;
-  color: #FFF;
-  background-color: #545358;
-  text-transform: uppercase;
-  transition: background-color 0.1s ease-out;
-}
-
-.grid-col-1of3:hover, .grid-col-1of3:focus {
-  background-color: #97979b;
-}
-
-.header-a{
-  color: white;
-  text-decoration: none;
-}
-
-.header-a:hover, .header-a:focus {
-  color: #545358;
-  text-decoration: underline;
-}
-
-
-
-a {
-  color: #545358;
-  text-decoration: none;
-}
-
-a:hover, a:focus {
-  color:   #bebec1;
-  text-decoration: underline;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*------------------------------------------------------
-*/
-
 
 /* 
   INTERACTIVE ELEMENTS -------------------
 */
 
 /* Styling for the navigation button */
-/*.button-nav {
+.button-nav {
   font-family: "Belleza";
   display: inline-block;
   padding: 1em 5em;
@@ -103,16 +38,16 @@ a:hover, a:focus {
 .button-nav:hover, .button-nav:focus {
   background-color: #D2D2D4;
 }
-*/
-/*a {
+
+a {
   color: #545358;
   text-decoration: none;
 }
 
 a:hover, a:focus {
-  color:   #bebec1;
+  color: #D2D2D4;
   text-decoration: underline;
-}*/
+}
 
 /* referred to https://stackoverflow.com/questions/17236018/how-to-style-submit-button */
 button[type=submit] {
@@ -134,8 +69,7 @@ input[type=text] {
   width: 25%;
   height:20px;
   font-family: "Lato";
-  color: #D2D2D4;
-  text-transform: lowercase;
+  color: #545358;
   background: #FFF;
 }
 
@@ -169,8 +103,8 @@ h2 {
 
 h3 {
   font-family: "Belleza";
-  margin-bottom: 0.5em;
-  font-size: 1em;
+  margin-bottom: 1em;
+  font-size: 1.3em;
   color: #988780;
 }
 
@@ -194,23 +128,42 @@ a.footer-link {
 	font-family: "Lato-light";
 	font-size: 1em;
 	letter-spacing: 1px;
+  margin: 2em 0;
+  display: block;
+}
+
+/* added this for checkout page */
+a.checkout-link {
+  font-family: "Lato";
+  letter-spacing: 1px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  padding: 12px;
+  color: white;
+  background-color: #545358;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 1em;
+  margin-bottom: 5em;
+  display: inline-block;
+
+}
+
+a.checkout-link:hover {
+  opacity: 0.7;
 }
 
 a.icons {
 	padding-right: 1em;
 }
 
-/* referred to http://css.maxdesign.com.au/listutorial/10.htm */
-li{
-	margin: 2em 0;
-}
-
-section p {
+/* edited this */
+p {
   margin-top: 0;
   color: #545358;
-  line-height: 1.5em;
-  font-size: 0.8em;
-
+  line-height: 1.8em;
+  font-size: 0.9em;
 }
 
 section code {
@@ -218,11 +171,22 @@ section code {
   padding: 0.5em 0.75em;
 }
 
-ul, ol{
-  color: #545358;
-  font-size: 0.8em;
-  list-style-type: none;
+input[type=text] {
+  width: 50%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #545358;
+  border-radius: 3px;
+}
 
+label {
+  margin-bottom: 15px;
+  display: block;
+}
+
+span.price {
+  float: right;
+  color: grey;
 }
 
 
@@ -266,11 +230,9 @@ ul, ol{
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
+  width: 20em;
+  padding-top: 3em;
   text-align: center;
-  font-family: arial;
 }
 
 .price {
@@ -279,31 +241,15 @@ ul, ol{
   font-family: "Lato";
 }
 
-.card button {
-  font-family: "Belleza";
-  text-transform: uppercase;
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #545358;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-  margin-top: 1em;
-}
-
-.card button:hover {
-  opacity: 0.7;
-}
-
 /* referred to https://www.youtube.com/watch?v=JJSoEo8JSnc */
 
 .container{
   display: flex;
   border: 1px #ccc solid;
   padding: 10px;
+  border-style: none;
+  border-top: 1px solid silver;
+  background-color: white;
 }
 
 .block-1{
@@ -358,6 +304,7 @@ ul, ol{
   background-color: #988780;
 }
 
+/* NEW SINCE JUNE 6 */
 .footer-c1 {
 	flex: 5;
 	padding: 30px;
@@ -371,32 +318,45 @@ ul, ol{
 	float: left;
 }
 
-.container {
-	border-style: none;
-	border-top: 1px solid silver;
-	background-color: white;
+.row {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -16px;
 }
 
-body {
-	display: flex;
-	min-height: 100vh;
-	flex-direction: column;
+/* COLUMN FOR CHECKOUT PAGE referred to https://stackoverflow.com/questions/1216114/how-can-i-make-a-div-stick-to-the-top-of-the-screen-once-its-been-scrolled-to */
+.col-25 {
+  flex: 20%;
+  float: right;
+  width: 30%;
+  position: absolute;
+  top: 60px;
+  right: 50px;
+  padding: 10px;
+  float:left;
 }
 
-main {
-	flex: 1 0 auto;
+.col-50 {
+  -ms-flex: 50%;
+  flex: 50%;
 }
 
-/* referred to https://stackoverflow.com/questions/45535824/how-can-i-add-border-to-a-form-box */
-.form-box {
-	border: solid 1px #545358!important;
-	padding: 1em;
+.col-75 {
+  -ms-flex: 75%;
+  flex: 75%;
 }
 
-/* referred to https://stackoverflow.com/questions/1457849/how-to-remove-the-border-highlight-on-an-input-text-element */
-.input-res:focus,
-select:focus,
-textarea:focus,
-button:focus {
-    outline: none;
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .col-25 {
+    margin-bottom: 20px;
+    position: relative;
+  }
 }
