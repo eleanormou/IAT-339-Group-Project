@@ -3,48 +3,56 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Shipping</title>
+    <title>Payment</title>
     <link href="css/main.css" rel="stylesheet">
   </head>
 
-<!-- ADDRESS SECTION referred to https://www.w3schools.com/howto/howto_css_checkout_form.asp for checkout form -->
+  <header>
+<a class="Header-Logo" href="homepage.html">JEU</a>
+  <nav>
+    <div class="grid-col-1of3">
+      <a class="header-a" href="newarrival.html" >NEW ARRIVALS</a>
+    </div>
+    <div class="grid-col-1of3">
+      <a class="header-a" href="shop.html">SHOP</a>
+    </div>
+      <div class="grid-col-1of3">
+     <a class="header-a" href="about.html"> ABOUT US </a>
+    </div>
+  </nav>
+</header>
 
-  <body>
+<!-- referred to https://www.w3schools.com/howto/howto_css_checkout_form.asp for checkout form -->
+
+    <div class="row">
   <div class="col-75">
     <div class="container">
           <div class="col-50">
-            <h3>Billing Address</h3>
-            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="First and Last">
-            <label for="email"><i class="fa fa-envelope"></i> Email</label>
-            <input type="text" id="email" name="email" placeholder="you@example.com">
-            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
-            <label for="city"><i class="fa fa-institution"></i> City</label>
-            <input type="text" id="city" name="city" placeholder="Vancouver">
+            <h3>Payment</h3>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="First and Last">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="MM">
 
             <div class="row">
               <div class="col-50">
-                <label for="state">State</label>
-                <input type="text" id="state" name="state" placeholder="BC">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="YY">
               </div>
               <div class="col-50">
-                <label for="zip">Zip</label>
-                <input type="text" id="zip" name="zip" placeholder="V2T 2T5">
-                        <label>
-          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-        </label>
-        <div class="card">
-          <a class="checkout-link" href="checkout_2.html">Proceed to Payment
-            </a>
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="CVV">
+                        <div class="card">
+          <a class="checkout-link" href="confirmation.html">Confirm Order</a>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
     </div>
   </div>
-</div>
 
-<!-- CHECKOUT CART SECTION -->
+<!-- CHECKOUT CART SECTION | https://www.w3schools.com/howto/howto_css_checkout_form.asp for checkout form-->
 
   <div class="col-25">
       <h4>Cart 
@@ -57,8 +65,10 @@
       <p><a href="#">Product 2</a> <span class="price">$5</span></p>
       <p><a href="#">Product 3</a> <span class="price">$8</span></p>
       <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+      <p>Shipping<span class="price">$10</span></p>
+      <p>Taxes<span class="price">$12</span></p>
       <hr>
-      <p>Total <span class="price"><b>$30</b></span></p>
+      <p>Total <span class="price"><b>$52</b></span></p>
     </div>
 
 <!-- FOOTER SECTION | referred to https://materializecss.com/footer.html -->
@@ -93,4 +103,6 @@
           <h5>© 2019 Jeu Jewelry Inc.</h5>
       </div>
   </div>
-</body>
+</div>
+</div>
+</html>
