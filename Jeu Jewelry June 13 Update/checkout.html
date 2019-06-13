@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Shipping</title>
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+
+  <header>
+<a class="Header-Logo" href="homepage.html">Jeu Jewelry</a>
+</header>
+
+<!-- ADDRESS SECTION referred to https://www.w3schools.com/howto/howto_css_checkout_form.asp for checkout form -->
+
+  <body>
+  <div class="col-75">
+    <div class="container">
+          <div class="col-50">
+            <h4>Billing Address</h4>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="First and Last">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="you@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="Vancouver">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="BC">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="V2T 2T5">
+                        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <div class="card">
+          <a class="checkout-link" href="checkout_2.html">Proceed to Payment
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CHECKOUT CART SECTION -->
+
+  <div class="col-25">
+      <h4>Cart 
+        <span class="price">
+          <i class="fa fa-shopping-cart"></i> 
+          <b>4</b>
+        </span>
+      </h4>
+      <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+      <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+      <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+      <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+      <hr>
+      <p>Total <span class="price"><b>$30</b></span></p>
+    </div>
+
+<!-- FOOTER SECTION | referred to https://materializecss.com/footer.html -->
+
+  <div class="container">
+      <div class="footer-c1">
+        <h4>Help</h4>
+        <a class="footer-link" href="faq.html">FAQ</a>
+        <a class="footer-link" href="shipping_returns.html">Shipping and Returns</a>
+        <a class="footer-link" href="materials_care.html">Materials and Care</a>
+        <a class="footer-link" href="contact.html">Contact Us</a>
+      </div>
+
+      <div class="footer-c1">
+          <h4>Company</h4>
+            <a class="footer-link" href="about.html">About Us</a>
+            <a class="footer-link" href="locations.html">Locations</a>
+      </div>
+
+      <div class="footer-c1">
+          <h4>Socials</h4>
+          <a class="icons" href="https://www.facebook.com/"><img src="icons/facebook.png" alt="Facebook" width="27" height="27"></a>
+          <a class="icons" href="https://www.instagram.com/"><img src="icons/instagram.png" alt="Instagram" width="27" height="27"></a>
+          <a class="icons" href="https://www.snapchat.com/"><img src="icons/snapchat.png" alt="Instagram" width="27" height="27"></a>
+      </div>
+
+      <div class="footer-c2">
+        <h4>Join Our Newsletter For 10% Off!</h4>
+          <div class="form-box">
+          <input type="text">
+          </div>
+          <h5>© 2019 Jeu Jewelry Inc.</h5>
+      </div>
+  </div>
+</body>
