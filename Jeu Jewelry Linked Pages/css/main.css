@@ -20,23 +20,73 @@ src: url("css/font/Belleza.woff") format("woff"), url("css/font/Belleza.woff2") 
 }
 
 
-/* 
-  INTERACTIVE ELEMENTS -------------------
-*/
-
-/* Styling for the navigation button */
-.button-nav {
-  font-family: "Belleza";
-  display: inline-block;
-  padding: 1em 5em;
-  color: #FFF;
-  background-color: #545358;
-  text-transform: uppercase;
-  transition: background-color 0.1s ease-out;
+body {
+  font-family: "Lato";
+  font-weight: normal;
+  padding: 2rem;
 }
 
-.button-nav:hover, .button-nav:focus {
-  background-color: #D2D2D4;
+h1 {
+  font-family: "Belleza";
+  margin: 2em 0 0.5em 0;
+  font-size: 2em;
+  color: #988780;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+h2 {
+  font-family: "Belleza";
+  margin-bottom: 0.5em;
+  font-size: 1.7em;
+  color: #988780;
+}
+
+h3 {
+  font-family: "Belleza";
+  margin-bottom: 1em;
+  font-size: 1em;
+  color: #988780;
+}
+
+h4 {
+  font-family: "Lato";
+  font-size: 1em;
+  letter-spacing: 1.5px;
+  color: #545358;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-family: "Lato-light";
+  font-size: 0.5em;
+  padding-top: 7em;
+  float: right;
+}
+
+/*----------nav--------------------------------------------
+*/
+
+
+.Header-Logo{
+  font-family: "Belleza";
+  margin-left: 1em;
+  margin-top:4em;
+  font-size: 1.7em;
+  color: #988780;
+  font-size: 2em;
+}
+
+.header-nav{
+  margin: 0 0 0 0;
+  text-align: right;
+}
+
+
+.header-a{
+  color: #545358;
+  text-decoration: none;
+  padding: 1em 2em 2em 2em;
 }
 
 a {
@@ -45,9 +95,67 @@ a {
 }
 
 a:hover, a:focus {
-  color: #D2D2D4;
+  color: #bebec1;
   text-decoration: underline;
 }
+
+/*----------nav end--------------------------------------------
+*/
+
+
+/*---------------------------new arrivals/ shop page--------------------
+*/
+.card {
+  padding-top: 2em;
+  text-align: center;
+  font-family: arial;
+  color: #545358;
+}
+
+.newarrival-grid-clo-1of2{
+  width: 30em;
+  float: left;
+  margin: 1em 3em 3em 4em;
+  /*border:red solid;*/
+
+}
+
+.price {
+  color: grey;
+  font-size: 1.2em;
+  font-family: "Lato";
+}
+
+.merch-description{
+  font-size: 0.8em;
+  font-family: "Lato";
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.card button {
+  font-family: "Belleza";
+  text-transform: uppercase;
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #97969c;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 1em;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+/*---------------------------new arrivals / shop page end--------------------
+*/
+
+
 
 /* referred to https://stackoverflow.com/questions/17236018/how-to-style-submit-button */
 button[type=submit] {
@@ -73,11 +181,6 @@ input[type=text] {
   background: #FFF;
 }
 
-body {
-  font-family: "Lato";
-  font-weight: normal;
-  padding: 2rem;
-}
 
 section:not([id]) {
   margin: 1em 0;
@@ -85,49 +188,12 @@ section:not([id]) {
   border-top: 1px solid #333;
 }
 
-h1 {
-  font-family: "Belleza";
-  margin-bottom: 0.5em;
-  font-size: 2em;
-  color: #988780;
-  text-align: center;
-  letter-spacing: 3px;
-}
-
-h2 {
-  font-family: "Belleza";
-  margin-bottom: 0.5em;
-  font-size: 1.7em;
-  color: #988780;
-}
-
-h3 {
-  font-family: "Belleza";
-  margin-bottom: 1em;
-  font-size: 1.3em;
-  color: #988780;
-}
-
-h4 {
-	font-family: "Lato";
-	font-size: 1em;
-	letter-spacing: 1.5px;
-	color: #545358;
-	text-transform: uppercase;
-}
-
-h5 {
-	font-family: "Lato-light";
-	font-size: 0.5em;
-	padding-top: 7em;
-	float: right;
-}
 
 /* referred to https://www.w3schools.com/css/tryit.asp?filename=trycss_link2 */
 a.footer-link {
-	font-family: "Lato-light";
-	font-size: 1em;
-	letter-spacing: 1px;
+  font-family: "Lato-light";
+  font-size: 1em;
+  letter-spacing: 1px;
   margin: 2em 0;
   display: block;
 }
@@ -142,12 +208,11 @@ a.checkout-link {
   color: white;
   background-color: #545358;
   cursor: pointer;
-  width: 100%;
+  width: 50%;
   font-size: 18px;
-  margin-top: 1em;
+  margin-top: 3em;
   margin-bottom: 5em;
   display: inline-block;
-
 }
 
 a.checkout-link:hover {
@@ -155,7 +220,7 @@ a.checkout-link:hover {
 }
 
 a.icons {
-	padding-right: 1em;
+  padding-right: 1em;
 }
 
 /* edited this */
@@ -195,54 +260,13 @@ span.price {
 */
 
 /* referred to https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_topnav */
-.topnav {
-  overflow: hidden;
-  background-color: white;
-}
-
-.topnav a {
-  font-family: "Lato-light";
-  float: left;
-  color: #545358;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  color: #D2D2D4;
-}
-
-.topnav a.active {
-  color: #545358;
-  text-decoration: underline;
-}
-
-.topnav-right {
-  float: right;
-}
-
-.topnav-mid {
-  float: left;
-  margin-left: 35%;
-}
-
-.card {
-  width: 20em;
-  padding-top: 3em;
-  text-align: center;
-}
-
-.price {
-  color: grey;
-  font-size: 22px;
-  font-family: "Lato";
-}
+/*
 
 /* referred to https://www.youtube.com/watch?v=JJSoEo8JSnc */
 
+.page-footer{
+  clear: both;
+}
 .container{
   display: flex;
   border: 1px #ccc solid;
@@ -250,6 +274,7 @@ span.price {
   border-style: none;
   border-top: 1px solid silver;
   background-color: white;
+  margin-top: 1em;
 }
 
 .block-1{
@@ -306,16 +331,16 @@ span.price {
 
 /* NEW SINCE JUNE 6 */
 .footer-c1 {
-	flex: 5;
-	padding: 30px;
-	float: left;
+  flex: 5;
+  padding: 30px;
+  float: left;
 }
 
 /* referred to https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow */
 .footer-c2 {
-	padding: 30px;
-	flex-grow: 1;
-	float: left;
+  padding: 30px;
+  flex-grow: 1;
+  float: left;
 }
 
 .row {
@@ -331,10 +356,11 @@ span.price {
   float: right;
   width: 30%;
   position: absolute;
-  top: 60px;
+  top: 120px;
   right: 50px;
   padding: 10px;
   float:left;
+  clear: both;
 }
 
 .col-50 {
@@ -360,3 +386,15 @@ span.price {
     position: relative;
   }
 }
+
+/*---------------------------production detail page start--------------------
+*/
+
+.productdetail-grid1of2{
+  width: 35%;
+  float: left;
+  margin: 4em 0 3em 8em;
+}
+
+
+
