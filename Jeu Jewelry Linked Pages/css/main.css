@@ -45,7 +45,11 @@ h2 {
 h3 {
   font-family: "Belleza";
   margin-bottom: 1em;
+<<<<<<< HEAD
   font-size: 1em;
+=======
+  font-size: 1.3em;
+>>>>>>> eleanormou-footer-1
   color: #988780;
 }
 
@@ -62,6 +66,7 @@ h5 {
   font-size: 0.5em;
   padding-top: 7em;
   float: right;
+<<<<<<< HEAD
 }
 
 /*----------nav--------------------------------------------
@@ -76,6 +81,38 @@ h5 {
   color: #988780;
   font-size: 2em;
 }
+=======
+}
+
+/*----------nav--------------------------------------------
+*/
+header{
+  background-color: lightgrey;
+  padding: 2em 0em 1em 0em;
+
+}
+
+
+.Header-Logo{
+color: #988780;
+margin-left: 45%;
+font-size: 3em;
+}
+
+.header-nav{
+  margin: 2em 0 0 0;
+  text-shadow: 4px 4px 4px #aaa;
+  text-align: center;
+}
+
+
+.header-a{
+  color: white;
+  text-decoration: none;
+  padding: 0 3em;
+/*  border: red solid;
+*/}
+>>>>>>> eleanormou-footer-1
 
 .header-nav{
   margin: 0 0 0 0;
@@ -106,12 +143,23 @@ a:hover, a:focus {
 /*---------------------------new arrivals/ shop page--------------------
 */
 .card {
+<<<<<<< HEAD
   padding-top: 2em;
   text-align: center;
   font-family: arial;
   color: #545358;
 }
 
+=======
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: arial;
+  color: #545358;
+  padding: 0.7em;
+  width: 90%;
+  margin:0 1em 0 1em;
+}
+>>>>>>> eleanormou-footer-1
 .newarrival-grid-clo-1of2{
   width: 30em;
   float: left;
@@ -128,11 +176,15 @@ a:hover, a:focus {
 
 .merch-description{
   font-size: 0.8em;
+<<<<<<< HEAD
   font-family: "Lato";
   padding-left: 2em;
   padding-right: 2em;
 }
 
+=======
+}
+>>>>>>> eleanormou-footer-1
 .card button {
   font-family: "Belleza";
   text-transform: uppercase;
@@ -188,6 +240,7 @@ section:not([id]) {
   border-top: 1px solid #333;
 }
 
+<<<<<<< HEAD
 
 /* referred to https://www.w3schools.com/css/tryit.asp?filename=trycss_link2 */
 a.footer-link {
@@ -223,6 +276,44 @@ a.icons {
   padding-right: 1em;
 }
 
+=======
+
+/* referred to https://www.w3schools.com/css/tryit.asp?filename=trycss_link2 */
+a.footer-link {
+	font-family: "Lato-light";
+	font-size: 1em;
+	letter-spacing: 1px;
+  margin: 2em 0;
+  display: block;
+}
+
+/* added this for checkout page */
+a.checkout-link {
+  font-family: "Lato";
+  letter-spacing: 1px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  padding: 12px;
+  color: white;
+  background-color: #545358;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 1em;
+  margin-bottom: 5em;
+  display: inline-block;
+
+}
+
+a.checkout-link:hover {
+  opacity: 0.7;
+}
+
+a.icons {
+	padding-right: 1em;
+}
+
+>>>>>>> eleanormou-footer-1
 /* edited this */
 p {
   margin-top: 0;
@@ -242,6 +333,7 @@ input[type=text] {
   padding: 12px;
   border: 1px solid #545358;
   border-radius: 3px;
+<<<<<<< HEAD
 }
 
 label {
@@ -249,6 +341,15 @@ label {
   display: block;
 }
 
+=======
+}
+
+label {
+  margin-bottom: 15px;
+  display: block;
+}
+
+>>>>>>> eleanormou-footer-1
 span.price {
   float: right;
   color: grey;
@@ -274,7 +375,10 @@ span.price {
   border-style: none;
   border-top: 1px solid silver;
   background-color: white;
+<<<<<<< HEAD
   margin-top: 1em;
+=======
+>>>>>>> eleanormou-footer-1
 }
 
 .block-1{
@@ -348,6 +452,7 @@ span.price {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0 -16px;
+<<<<<<< HEAD
 }
 
 /* COLUMN FOR CHECKOUT PAGE referred to https://stackoverflow.com/questions/1216114/how-can-i-make-a-div-stick-to-the-top-of-the-screen-once-its-been-scrolled-to */
@@ -398,3 +503,42 @@ span.price {
 
 
 
+=======
+}
+
+/* COLUMN FOR CHECKOUT PAGE referred to https://stackoverflow.com/questions/1216114/how-can-i-make-a-div-stick-to-the-top-of-the-screen-once-its-been-scrolled-to */
+.col-25 {
+  flex: 20%;
+  float: right;
+  width: 30%;
+  position: absolute;
+  top: 60px;
+  right: 50px;
+  padding: 10px;
+  float:left;
+}
+
+.col-50 {
+  -ms-flex: 50%;
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%;
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .col-25 {
+    margin-bottom: 20px;
+    position: relative;
+  }
+}
+>>>>>>> eleanormou-footer-1
