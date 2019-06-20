@@ -7,15 +7,25 @@
     <link href="css/main.css" rel="stylesheet">
   </head>
 
-  <header>
-<a class="Header-Logo" href="homepage.html">Jeu Jewelry</a>
+<header>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <div class="header-nav">
+  <a class="Header-Logo" href="homepage.html">Jeu Jewelry</a>
+  <a class="header-a" href="about.html">About</a>
+  <a class="header-a" href="checkout.html">Cart</a>
+  <a class="header-a" href="newarrival.html">New Arrivals</a>
+  <a class="header-a" href="shop.html">Shop</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  <i class="fa fa-bars"></i>
+</div>
+</a>
 </header>
 
 <!-- ADDRESS SECTION referred to https://www.w3schools.com/howto/howto_css_checkout_form.asp for checkout form -->
 
   <body>
+    <div class="newarrival-grid-clo-1of2">
   <div class="col-75">
-    <div class="container">
           <div class="col-50">
             <h4>Billing Address</h4>
             <label for="fname"><i class="fa fa-user"></i> Full Name</label>
@@ -26,9 +36,6 @@
             <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
             <label for="city"><i class="fa fa-institution"></i> City</label>
             <input type="text" id="city" name="city" placeholder="Vancouver">
-
-            <div class="row">
-              <div class="col-50">
                 <label for="state">State</label>
                 <input type="text" id="state" name="state" placeholder="BC">
               </div>
@@ -38,15 +45,8 @@
                         <label>
           <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
         </label>
-        <div class="card">
-          <a class="checkout-link" href="checkout_2.html">Proceed to Payment
-            </a>
-          </div>
-        </div>
       </div>
     </div>
-  </div>
-</div>
 
 <!-- CHECKOUT CART SECTION -->
 
@@ -57,13 +57,16 @@
           <b>4</b>
         </span>
       </h4>
-      <p><a href="#">Product 1</a> <span class="price">$15</span></p>
-      <p><a href="#">Product 2</a> <span class="price">$5</span></p>
-      <p><a href="#">Product 3</a> <span class="price">$8</span></p>
-      <p><a href="#">Product 4</a> <span class="price">$2</span></p>
-      <hr>
-      <p>Total <span class="price"><b>$30</b></span></p>
+      <p><a href="productionpage.html"><img src="image/ring.jpg" alt="Product1" style="width:15%"></a> <span class="price">$50</span></p>
+      <p><a><img src="image/earring.jpg" alt="Product2" style="width:15%"></a> <span class="price">$75</span></p>
+      <p><a><img src="image/necklace.jpg" alt="Product3" style="width:15%"></a> <span class="price">$42</span></p>
+      <p><a><img src="image/bracelet.jpg" alt="Product4" style="width:15%"></a> <span class="price">$35</span></p></b></span></p>
+              <div class="card">
+          <a class="checkout-link" href="checkout_2.html">Proceed to Payment
+            </a>
+          </div>
     </div>
+  </div>
 
 <!-- FOOTER SECTION | referred to https://materializecss.com/footer.html -->
 
