@@ -69,6 +69,15 @@ h5 {
   float: right;
 }
 
+<<<<<<< HEAD:new/css/main.css
+=======
+h1.banner-header{
+ position: absolute;
+ margin-left: 26em;
+ margin-top: 14em;
+}
+
+>>>>>>> master:Jeu Jewelry June 13 Update/css/main.css
 /*----------homepage start--------------------------------------------
 */
 .home-h2{
@@ -93,7 +102,11 @@ text-decoration: none;
 font-size: 20px;
 color: white;
 padding: 10px 19px 10px 19px;
+<<<<<<< HEAD:new/css/main.css
 margin: 3em 14em auto auto;
+=======
+margin: 3em 1em auto auto;
+>>>>>>> master:Jeu Jewelry June 13 Update/css/main.css
   transition: background-color 1s;
 
 }
@@ -104,7 +117,11 @@ margin: 3em 14em auto auto;
 }
 
 .homepage{
+<<<<<<< HEAD:new/css/main.css
   background: 90% 0.5% url("../image/SWERVE_digital_v1_7.8.2016_2000x12004.jpg") fixed ;
+=======
+  background: 90% 0% url("../image/SWERVE_digital_v1_7.8.2016_2000x12004.jpg") fixed;
+>>>>>>> master:Jeu Jewelry June 13 Update/css/main.css
   transition: background 2s ease-in-out;
 }
 
@@ -157,6 +174,7 @@ a:hover, a:focus {
 
 /*---------------------------new arrivals/ start--------------------
 */
+<<<<<<< HEAD:new/css/main.css
 
 .newarrival{
   margin-bottom: 2em; 
@@ -166,12 +184,22 @@ a:hover, a:focus {
 =======
   padding: 2em;
 >>>>>>> master:Jeu Jewelry June 13 Update/css/main.css
+=======
+.newarrival{
+  margin-bottom: 3em;
+  padding-top: 3em; 
+}
+
+.card {
+>>>>>>> master:Jeu Jewelry June 13 Update/css/main.css
   text-align: center;
   font-family: arial;
   color: #545358;
-  width: 100%;
+  margin-right: 1em;
+  border: lightgrey solid 0.5px;
 }
 
+<<<<<<< HEAD:new/css/main.css
 <<<<<<< HEAD:new/css/main.css
 .featureproducts{
   margin-left: 4.4em;
@@ -185,10 +213,16 @@ a:hover, a:focus {
   margin-bottom: 4em;
 =======
 .newarrival-grid-clo-1of2{
+=======
+.newarrival-grid-clo-1of3{
+  width: 100%;
+>>>>>>> master:Jeu Jewelry June 13 Update/css/main.css
   display: flex;
-  flex-direction: row;
   clear: both;
+<<<<<<< HEAD:new/css/main.css
   padding-top: 1em;
+>>>>>>> master:Jeu Jewelry June 13 Update/css/main.css
+=======
 >>>>>>> master:Jeu Jewelry June 13 Update/css/main.css
 }
 
@@ -198,6 +232,7 @@ a:hover, a:focus {
   font-family: "Lato";
 }
 
+<<<<<<< HEAD:new/css/main.css
 /*---------------------------new arrivals-end-------------------
 */
 
@@ -251,6 +286,13 @@ a.checkout-link {
   border-radius: 3px;
   text-transform: uppercase;
   padding: 10px;
+=======
+.card button {
+  font-family: "Belleza";
+  text-transform: uppercase;
+  border: none;
+  outline: 0;
+>>>>>>> master:Jeu Jewelry June 13 Update/css/main.css
   color: white;
   background-color: #545358;
   cursor: pointer;
@@ -265,9 +307,84 @@ a.checkout-link:hover {
   opacity: 0.7;
 }
 
+<<<<<<< HEAD:new/css/main.css
+=======
+/*---------------------------new arrivals end--------------------
+*/
+
+/*---------------------------shop page start--------------------
+*/
+.shop-grid1of3{
+  float: left;
+  margin-top: 2em;
+  clear: both;
+}
+.collection-a{
+  margin-bottom: 1em;
+  clear: both;
+}
+
+.shop-grid2of3{
+width: 75%;
+margin-left: 6em;
+clear: both;
+}
+
+.shop-lowerrows{
+  margin-left: 4em;
+  width: 100%;
+}
+
+.h3-collection{
+display: block;
+font-size: 1.5em;
+}
+
+.shop-product1of3{
+    display: flex;
+  clear: both;
+  margin-right: 2em;
+  margin-bottom: 3em;
+}
+
+.merch-description{
+  font-size: 0.8em;
+  font-family: "Lato";
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+>>>>>>> master:Jeu Jewelry June 13 Update/css/main.css
 /*---------------------------shop page end--------------------
 */
 
+/* ----------------checkout page start------------------ */
+
+.newarrival-grid-clo-1of2{
+  display: flex;
+  flex-direction: row;
+  clear: both;
+  padding-top: 1em;
+}
+
+a.checkout-link {
+  font-family: "Lato";
+  letter-spacing: 1px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  padding: 12px;
+  text-align: center;
+  display: block;
+  color: white;
+  background-color: #545358;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 1.5em;
+}
+
+a.checkout-link:hover {
+  opacity: 0.7;
+}
 
 
 /* referred to https://stackoverflow.com/questions/17236018/how-to-style-submit-button */
@@ -279,6 +396,8 @@ button[type=submit] {
   font-family: "Lato";
   background: #FFF;
 }
+
+/* ----------------checkout page end------------------*/
 
 /* 
   TEXT ELEMENTS -------------------
@@ -311,7 +430,10 @@ a.footer-link {
   display: block;
 }
 
+<<<<<<< HEAD:new/css/main.css
 
+=======
+>>>>>>> master:Jeu Jewelry June 13 Update/css/main.css
 a.icons {
   padding-right: 1em;
 }
@@ -366,7 +488,7 @@ span.price {
   border-style: none;
   border-top: 1px solid silver;
   background-color: white;
-  margin-top: 1em;
+  margin-top: 5em;
 }
 
 .block-1{
