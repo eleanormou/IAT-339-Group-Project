@@ -70,8 +70,6 @@ h5 {
 
 .Header-Logo{
   font-family: "Belleza";
-  margin-left: 1em;
-  margin-top:4em;
   font-size: 1.7em;
   color: #988780;
   font-size: 2em;
@@ -79,14 +77,15 @@ h5 {
 
 .header-nav{
   margin: 0 0 0 0;
-  text-align: right;
 }
 
 
 .header-a{
   color: #545358;
   text-decoration: none;
-  padding: 1em 2em 2em 2em;
+  padding: 14px 16px;
+  display: inline-block;
+  float: right;
 }
 
 a {
@@ -99,6 +98,11 @@ a:hover, a:focus {
   text-decoration: underline;
 }
 
+.header-nav .icon {
+  display: none;
+  padding: 14px 16px;
+}
+
 /*----------nav end--------------------------------------------
 */
 
@@ -106,23 +110,23 @@ a:hover, a:focus {
 /*---------------------------new arrivals/ shop page--------------------
 */
 .card {
-  padding-top: 2em;
+  padding: 2em;
   text-align: center;
   font-family: arial;
   color: #545358;
+  width: 100%;
 }
 
 .newarrival-grid-clo-1of2{
-  width: 30em;
-  float: left;
-  margin: 1em 3em 3em 4em;
-  /*border:red solid;*/
-
+  display: flex;
+  flex-direction: row;
+  clear: both;
+  padding-top: 1em;
 }
 
 .price {
   color: grey;
-  font-size: 1.2em;
+  font-size: 1em;
   font-family: "Lato";
 }
 
@@ -269,6 +273,7 @@ span.price {
 }
 .container{
   display: flex;
+  flex-wrap: wrap;
   border: 1px #ccc solid;
   padding: 10px;
   border-style: none;
@@ -293,12 +298,6 @@ span.price {
   flex: 1;
   padding: 10px;
   float: right;
-}
-
-@media (max-width: 35rem){
-  .container{
-    flex-direction: column;
-  }
 }
 
 .block-c1{
@@ -352,15 +351,7 @@ span.price {
 
 /* COLUMN FOR CHECKOUT PAGE referred to https://stackoverflow.com/questions/1216114/how-can-i-make-a-div-stick-to-the-top-of-the-screen-once-its-been-scrolled-to */
 .col-25 {
-  flex: 20%;
-  float: right;
-  width: 30%;
-  position: absolute;
-  top: 120px;
-  right: 50px;
-  padding: 10px;
-  float:left;
-  clear: both;
+  width: 50%;
 }
 
 .col-50 {
@@ -373,19 +364,33 @@ span.price {
   flex: 75%;
 }
 
-.col-25,
-.col-50,
-.col-75 {
-  padding: 0 16px;
-}
-
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
-@media (max-width: 800px) {
-  .col-25 {
+
+@media screen and (max-width: 600px) {
+    .col-25 {
     margin-bottom: 20px;
     position: relative;
   }
+  .header-nav a:not(:first-child) {display: none;}
+  .header-nav a.icon {
+    float: right;
+    display: block;
+  }
+    .header-nav.responsive {position: relative;}
+  .header-nav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .header-nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
+
+
+
 
 /*---------------------------production detail page start--------------------
 */

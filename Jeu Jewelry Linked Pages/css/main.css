@@ -347,7 +347,7 @@ span.price {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 0 -16px;
+
 }
 
 /* COLUMN FOR CHECKOUT PAGE referred to https://stackoverflow.com/questions/1216114/how-can-i-make-a-div-stick-to-the-top-of-the-screen-once-its-been-scrolled-to */
