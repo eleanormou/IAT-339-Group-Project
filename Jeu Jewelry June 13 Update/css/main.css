@@ -64,6 +64,12 @@ h5 {
   float: right;
 }
 
+h1.banner-header{
+ position: absolute;
+ margin-left: 26em;
+ margin-top: 14em;
+}
+
 /*----------homepage start--------------------------------------------
 */
 .home-h2{
@@ -88,7 +94,7 @@ text-decoration: none;
 font-size: 20px;
 color: white;
 padding: 10px 19px 10px 19px;
-margin: 3em 14em auto auto;
+margin: 3em 1em auto auto;
   transition: background-color 1s;
 
 }
@@ -99,7 +105,7 @@ margin: 3em 14em auto auto;
 }
 
 .homepage{
-  background: 90% 0.5% url("../image/SWERVE_digital_v1_7.8.2016_2000x12004.jpg") fixed ;
+  background: 90% 0% url("../image/SWERVE_digital_v1_7.8.2016_2000x12004.jpg") fixed;
   transition: background 2s ease-in-out;
 }
 
@@ -152,7 +158,8 @@ a:hover, a:focus {
 /*---------------------------new arrivals/ shop page--------------------
 */
 .newarrival{
-  margin-bottom: 2em; 
+  margin-bottom: 3em;
+  padding-top: 3em; 
 }
 
 .card {
