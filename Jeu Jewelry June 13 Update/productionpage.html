@@ -2,34 +2,35 @@
 <html lang="en">
 
   <head>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Production page</title>
     <link href="css/main.css" rel="stylesheet">
-    <link href="css/css1.css" rel="stylesheet">
-
   </head>
 
-<header>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <div class="header-nav">
-  <a class="Header-Logo" href="homepage.html">Jeu Jewelry</a>
-  <a class="header-a" href="about.html">About</a>
-  <a class="header-a" href="checkout.html">Cart</a>
-  <a class="header-a" href="newarrival.html">New Arrivals</a>
-  <a class="header-a" href="shop.html">Shop</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-  <i class="fa fa-bars"></i>
-</div>
-</a>
-</header>
+<body>
 
+    <header>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <div class="header-nav">
+      <a class="Header-Logo" href="homepage.html">Jeu Jewelry</a>
+      <a class="header-a" href="about.html">About</a>
+      <a class="header-a" href="checkout.html">Cart</a>
+      <a class="header-a" href="newarrival.html">New Arrivals</a>
+      <a class="header-a" href="shop.html">Shop</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+    </div>
+    </header>
 
-  <body>
 
         <div class="productdetail-grid1of2"> 
 
-          <img alt=" produst detail picture1" src="image/r1-KNOT_SS_900x1200.jpg" width="100%"> 
+          <img alt=" produst detail picture1" src="image/r1-KNOT_SS_900x1200.jpg" class="productpage-image"> 
         </div>
 
-        <div class="productdetail-grid1of2" class="productdetail-col2">
+        <div class="productdetail-grid1of2 productdetail-col2">
 
            <h2>Vinea Knot</h2> 
             <h4>DESCRIPTION</h4>
@@ -45,16 +46,13 @@ Handmade in Seattle.</p>
             <p>Bronze and silver naturally oxidize over time. This grey hue, a chemical reaction, can be removed with a metal polish and a polishing cloth. To delay oxidation, keep your Jeu Jewelry away from moisture, shower steam, and other water activities. And when you’re not wearing your jewelry, store it in a plastic bag.</p>
 
  
- <!-- -------------------quantity reference https://bearfruitjewelry.com/juliet-statement-ring/---------------------- -->
+<!--  quantity reference https://bearfruitjewelry.com/juliet-statement-ring/
+ -->
 <label class="form-field-quantity-label">
             <span class="form-field-title">Quantity</span>
             
             <span class="form-field-quantity-control" data-quantity-control="288">
                   <input class="form-input" type="number" name="qty[]" value="1" min="0" data-quantity-control-input="">
-
-               <!--                  <span class="quantity-control quantity-decrement " data-quantity-control-action="decrement">—</span>
-
-                  <span class="quantity-control quantity-increment " data-quantity-control-action="increment">+</span> -->
            </span>
 
 </label>
@@ -66,20 +64,25 @@ Handmade in Seattle.</p>
           <div><a href="checkout.html" class="checkout-button">CHECK OUT</a></div>
         </div>
 
-  </body>
+ 
 
 
 <!-- FOOTER SECTION | referred to https://materializecss.com/footer.html -->
 
-<footer class="page-footer">
   <div class="container">
+
+        <div class="footer-c1">
+        <h4>Class Links</h4>
+        <a class="footer-link" href="https://github.com/eleanormou/IAT-339-Group-Project">Git Repository</a>
+        <a class="footer-link" href="template.html">Style Guide</a>
+        <a class="footer-link" href="citation.html">Citation</a>
+      </div>
+      
       <div class="footer-c1">
-      <ul>
         <h4>Help</h4>
-        <a class="footer-link" href="contact.html">FAQ</a>
-        <a class="footer-link" href="contact.html">Shipping and Returns</a>
+        <a class="footer-link" href="faq.html">FAQ</a>
+        <a class="footer-link" href="shipping_returns.html">Shipping and Returns</a>
         <a class="footer-link" href="materials_care.html">Materials and Care</a>
-      </ul>
       </div>
 
       <div class="footer-c1">
@@ -98,11 +101,11 @@ Handmade in Seattle.</p>
       <div class="footer-c2">
         <h4>Join Our Newsletter For 10% Off!</h4>
           <div class="form-box">
-          <input type="text" class="input-res">
+          <input type="text">
           </div>
           <h5>© 2019 Jeu Jewelry Inc.</h5>
       </div>
-
   </div>
-</footer>
+  
+</body>
 </html>

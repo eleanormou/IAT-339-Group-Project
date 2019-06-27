@@ -38,7 +38,7 @@ h1 {
 h2 {
   font-family: "Belleza";
   margin-bottom: 1em;
-  font-size: 1.7em;
+  font-size: 1.4em;
   color: #988780;
 }
 
@@ -150,107 +150,220 @@ a:hover, a:focus {
 */
 
 
-/*---------------------------new arrivals/ shop page--------------------
+
+/*---------------------------new arrivals/ shop page start--------------------
 */
-.newarrival{
-  margin-bottom: 3em;
-  padding-top: 3em; 
-}
 
-.card {
-  text-align: center;
-  font-family: arial;
-  color: #545358;
-  margin-right: 1em;
-}
-
-.newarrival-grid-clo-1of3{
+ .card {
+      text-align: center;
+      font-family: arial;
+      color: #545358;
+      margin-right: 1.5em;
+    }
+.new-productimage , .shop-product-image{
   width: 100%;
-  display: flex;
-  clear: both;
 }
 
-.price {
-  color: grey;
-  font-size: 1em;
+@media  screen and (min-width:62em) {
+
+      .newarrival{
+      margin-bottom: 3em;
+      padding-top: 3em; 
+    }
+
+    .productimage:hover, .productimage:focus {
+      opacity: 0.5;
+    }
+
+    .newarrival-grid-clo-1of3{
+      width: 100%;
+      display: flex;
+      clear: both;
+    }
+
+    .price {
+      color: grey;
+      font-size: 1em;
+      font-family: "Lato";
+    }
+
+      .shop-grid1of3{
+        float: left;
+        margin-top: 5em;
+        clear: both;
+        margin-left: 1.4em;
+        border: solid #fbf1f1 1px;
+        padding: 2em;
+        position: absolute;
+
+      }
+      .collection-a{
+        margin-bottom: 1em;
+        clear: both;
+      }
+
+      .shop-grid2of3{
+      width: 70%;
+      margin-left: 17em;
+      float: left;
+      margin-top: 3em;
+      /*border: solid blue;
+      */}
+
+
+      .h3-collection{
+      display: block;
+      font-size: 1.3em;
+      }
+
+      .shop-product1of3{
+        display: flex;
+        clear: both;
+        margin-right: 2em;
+        margin-bottom: 3em;
+      }
+}
+@media screen and (max-width: 61.9375em){
+
+  .shop-grid1of3{
+    margin-top: 1.5em;
+ 
+  }
+
+  .collection-a{
+    text-align: center;
+    color: white;
+     width: 30%;
+   float: left;
+     border: lightgrey solid;
+     margin-top: 1.5em;
+  }
+  .shop-grid2of3{
+    clear: both;
+    margin-top: 6em;
+    width:90%;
+    margin-left: 2em;
+  }
+
+  .card{
+    margin-bottom: 4em;
+    border:solid lightgrey 1px;
+
+  }
+  .h3-collection{
+    font-size: 1.3em;
+  
+  }
+}
+/*--------image hover effect: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity---------
+*/
+.shop-productimage{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  width: 100%;
+}
+
+.shop-image-middle {
+  transition: .5s ease;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+}
+
+.shop-image-container:hover .shop-productimage {
+  opacity: 0.5;
+}
+
+.shop-image-container:hover .shop-image-middle {
+  opacity: 1;
+}
+
+
+
+/*--------------------------------------------------new arrivals & shop page end--------------------
+*/
+
+
+
+/*---------------------------production detail page start--------------------
+*/
+
+    .checkout-link-cart{
+  background-color: #545358;
   font-family: "Lato";
-}
-
-.card button {
-  font-family: "Belleza";
+  letter-spacing: 1px;
+  border-radius: 3px;
   text-transform: uppercase;
-  border: none;
-  outline: 0;
-  color: white;
-  background-color: #97969c;
+  padding: 12px;
   text-align: center;
+  display: block;
+  color: white;
   cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-  margin-top: 1em;
-}
-
-.card button:hover {
-  opacity: 0.7;
-}
-
-
-
-/*---------------------------new arrivals end--------------------
-*/
-
-/*---------------------------shop page start--------------------
-*/
-.shop-grid1of3{
-  float: left;
-  margin-top: 2em;
-  clear: both;
-}
-.collection-a{
-  margin-bottom: 1em;
-  clear: both;
-}
-
-.shop-grid2of3{
-width: 75%;
-margin-left: 6em;
-clear: both;
-}
-
-.shop-lowerrows{
-  margin-left: 4em;
-  width: 100%;
-}
-
-.h3-collection{
-display: block;
-font-size: 1.5em;
-}
-
-.shop-product1of3{
-  display: flex;
-  clear: both;
-  margin-bottom: 3em;
-
-}
-
-.merch-description{
-  font-size: 0.8em;
+  font-size: 12px;                   
+  margin-top: 1.5em;
+    }
+    .checkout-button{
+  background-color: #988780;
   font-family: "Lato";
-  padding-left: 2em;
-  padding-right: 2em;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  padding: 12px;
+  text-align: center;
+  display: block;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;                   
+  margin-top: 1.5em;
+
 }
 
-.newarrival-grid-clo-1of2{
-  display: flex;
-  flex-direction: row;
-  clear: both;
-  margin: 2em 5em 2em 0em;
-  width: 100%;
+@media  screen and (min-width:62em){
+    .productdetail-grid1of2{
+      width: 35%;
+      float: left;
+      margin: 4em 0 3em 8em;
+    }
+    .productpage-image{
+      width: 100%;
+    }
+
+}
+@media screen and (max-width: 61.9375em){
+.productdetail-grid1of2{
+ 
+  margin-left: 5em;
+  margin-top: 4em;
+
+}
+.productpage-image{
+  width: 60%;
+  margin-left: 15%;
 }
 
-/*---------------------------shop page end--------------------
+
+.checkout-button{
+  width: 100px;
+}
+
+.checkout-link-cart{
+  width: 100px;
+    }
+
+}
+
+/*---------------------------production detail page end--------------------
 */
+
+
+
+
+
+
+
 
 /* ----------------checkout page start------------------ */
 
@@ -272,7 +385,7 @@ a.checkout-link {
   color: white;
   background-color: #545358;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 12px;
   margin-top: 1.5em;
   transition: 0.5s;
 }
@@ -381,9 +494,9 @@ span.price {
 
 /* referred to https://www.youtube.com/watch?v=JJSoEo8JSnc */
 
-.page-footer{
+/*.page-footer{
   clear: both;
-}
+}*/
 .container{
   display: flex;
   flex-wrap: wrap;
@@ -393,6 +506,7 @@ span.price {
   border-top: 1px solid silver;
   background-color: white;
   margin-top: 5em;
+  clear: both;
 }
 
 .block-1{
@@ -540,7 +654,7 @@ h3.home-h2 {
 
 /*---------------------------production detail page start--------------------
 */
-
+/*
     .checkout-link-cart{
   background-color: #545358;
   font-family: "Lato";
@@ -569,9 +683,9 @@ h3.home-h2 {
   font-size: 12px;                   
   margin-top: 1.5em;
 
-}
+}*/
 
-@media screen and (min-width:62em){
+/*@media screen and (min-width:62em){
     .productdetail-grid1of2{
       width: 35%;
       float: left;
@@ -580,9 +694,9 @@ h3.home-h2 {
     .productpage-image{
       width: 100%;
     }
-}
+}*/
 
-@media screen and (max-width: 61.9375em){
+/*@media screen and (max-width: 61.9375em){
 .productdetail-grid1of2{
  
   margin-left: 5em;
@@ -644,6 +758,6 @@ h3.home-h2 {
   .confirm-grid {
     column-count: 1;
   }
-}
+}*/
 
 
